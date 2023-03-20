@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="ranonline.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="back.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <form autocomplete="off">
+        <h3><img src="ranonline.png"></h3>
+        <h1><center>Create Account</h1>
+        <br>
+
+        <div class="input-section">
+          <label>Username<span class="required-color">*</span></label>
+          <input type="text"placeholder="Enter Username" id="first-name-input" required />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            >Username Cannot Be Empty</span
+          >
+        </div>
+        
+        <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="Enter Email" id="email" required />
+          <span id="email-error" class="hide required-color error-message"
+            >Invalid Email</span>
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Cannot Be Empty</span>
+        </div>
+
+        <div class="input-section">
+          <label>Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            id="password"
+            required/>
+          <span id="password-error" class="hide required-color error-message">
+            Passwords Should Have Letter, Special symbols, Numbers And Length >=
+            8
+          </span>
+          <span id="empty-password" class="hide required-color error-message">
+            Password Cannot Be Empty
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Confirm Password <span class="required-color">*</span></label>
+          <input
+            type="password"
+            id="verify-password"
+            placeholder="Confirm Password"
+            required/>
+          <span
+            id="verify-password-error"
+            class="hide required-color error-message"
+            >Should Be Same As Previous Password</span>
+          <span
+            id="empty-verify-password"
+            class="hide required-color error-message"
+            >Password Cannot Be Empty</span>
+                    </div>
+        <div class="input-section">
+        </div>
+
+        <div class="select">
+        <label>Country or region <span class="required-color">*</label>
+        <select name="country" id="country">
+            <option>Please Select</option>
+            <option>China</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>Indonesia</option>
+            <option>Pakistan</option>
+            <option>Brazil</option>
+            <option>Nigeria</option>
+            <option>Bangladesh</option>
+            <option>Russia</option>
+            <option>Mexico</option>
+            <option>Japan</option>
+            <option>Ethiopia</option>
+            <option>Philippines</option>
+            <option>Egypt</option>
+            <option>Vietnam</option>
+            <option>DR Congo</option>
+            <option>Turkey</option>
+            <option>Iran</option>
+            <option>Germany</option>
+            <option>Thailand</option>
+            <option>United Kingdom</option>
+            <option>France</option>
+            <option>Italy</option>
+            <option>Tazania</option>
+            <option>South Africa</option>
+            <option>Myanmar</option>
+            <option>Kenya</option>
+            <option>South Korea</option>
+            <option>Columbia</option>
+            <option>Spain</option>
+            <option>Uganda</option>
+            <option>Argentina</option>
+            <option>Algeria</option>
+            <option>Sudan</option>
+            <option>Ukraine</option>
+            <option>Iraq</option>
+            <option>Afghanisthan</option>
+            <option>Poland</option>
+            <option>Canada</option>
+            <option>Moroco</option>
+            <option>Saudi Arabia</option>
+        </select> 
+        </div>
+        <button id="submit-button">>Next</button>
+        <br>
+        <p> <h5>Already have an account? > Log in<h5></p>
+      </form>
+    </div>
+    <script src="registration.js"></script>
+  </body>
+</html>
